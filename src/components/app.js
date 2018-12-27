@@ -5,6 +5,7 @@ import Header from './header';
 import Home from './home';
 import Profile from './profile';
 import HackerNews from './hacker-news';
+import Weather from './weather';
 
 export default class App extends Component {
 	/** Gets fired when the route changes.
@@ -22,7 +23,7 @@ export default class App extends Component {
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<HackerNews path="/hacker-news/" />
-					<Profile path="/profile/" user="me" />
+					<Weather path="/weather/" />
 					<Profile path="/profile/:user" />
 				</Router>
 			</div>
